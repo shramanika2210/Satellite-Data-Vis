@@ -1,0 +1,259 @@
+.body{
+  background-color: #155a4db8;
+}
+
+.navbar {
+  background-color: #0f574a; /* Background color */
+  color: #fff; /* Text color */
+  padding: 10px 0; /* Padding */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.851); /* Box shadow for a subtle effect */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px; /* Max width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add some padding to the container */
+}
+
+/* about */
+
+/* .container {
+  text-align: center;
+  width: "100vw";
+  height: "20rem";
+  background: #3e786db8; /* Background color */
+  ;
+/*} */
+
+/* .left-side {
+  flex: 1; 
+  padding: 20px;
+}
+*/
+/*
+.right-side {
+  flex: 1; 
+  padding: 20px;
+} */
+
+.contact-info input,
+.contact-info textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.sendbutton {
+  display: inline-block;
+  background: #c8d0957a;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Center the logo and site name vertically */
+  margin-left: 15px;
+  text-decoration: none;
+
+}
+
+/* Logo image */
+.logo {
+  width: 40px; /* Set the width of the logo image */
+  height: 40px; /* Set the height of the logo image */
+  margin-right: 10px; /* Spacing between logo and site name */
+}
+
+/* Site name */
+.site-name {
+  font-size: 1.2rem; /* Adjust the font size */
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  text-transform: uppercase; /* Convert text to uppercase */
+}
+
+.nav-links li {
+  margin-right: 70px; /* Spacing between menu items */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+
+  &:hover {
+    color: #d5da47; /* Change color on hover */
+  }
+}
+
+.drawer-button {
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  display: block; /* Make it always visible */
+  position: absolute; /* Position it absolutely within the navbar */
+  left: 10px; /* Adjust the left position as needed */
+  top: 20px; /* Adjust the top position as needed */
+}
+
+/* Monitor */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.form-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #0d7663;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+.upload-files-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7fff7;
+  width: 420px;
+  padding: 30px 60px;
+  border-radius: 40px;
+
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px, rgba(0, 0, 0, 0.28) 0px 6px 6px;
+}
+.drag-file-area {
+  border: 2px dashed #217265b8;
+  border-radius: 40px;
+  margin: 10px 0 15px;
+  padding: 30px 50px;
+  width: 350px;
+  text-align: center;
+}
+.drag-file-area .upload-icon {
+  font-size: 50px;
+}
+.drag-file-area h3 {
+  font-size: 26px;
+  margin: 15px 0;
+}
+.drag-file-area label {
+  font-size: 19px;
+}
+.drag-file-area label .browse-files-text {
+  color: #7b2cbf;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.browse-files span {
+  position: relative;
+  top: -25px;
+}
+.default-file-input {
+  opacity: 0;
+}
+.cannot-upload-message {
+  background-color: #ffc6c4;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px 10px 5px 30px;
+  border-radius: 5px;
+  color: #bb0000;
+  display: none;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cannot-upload-message span,
+.upload-button-icon {
+  padding-right: 10px;
+}
+.cannot-upload-message span:last-child {
+  padding-left: 20px;
+  cursor: pointer;
+}
+.file-block {
+  color: #f7fff7;
+  background-color: #2cbf84;
+  transition: all 1s;
+  width: 390px;
+  position: relative;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 15px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.file-info {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.file-icon {
+  margin-right: 10px;
+}
+.file-name,
+.file-size {
+  padding: 0 3px;
+}
+.remove-file-icon {
+  cursor: pointer;
+}
+.progress-bar {
+  display: flex;
+  position: absolute;
+  bottom: 0;;
+  color: #f7fff7;
+  left: 4.5%;
+  width: 0;
+  height: 5px;
+  border-radius: 25px;
+  background-color: #4bb543;
+}
+.upload-button {
+  font-family: "Montserrat";
+  background-color: #133d36fe;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 7.5px 50px;
+  cursor: pointer;
+}
+
+.answerbox {
+  font-size: 20px;
+  font-weight: 600;
+  /* background-color: #c5a44a; */
+}
+
+
+
+
